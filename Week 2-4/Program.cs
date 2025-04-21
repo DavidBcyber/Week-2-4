@@ -11,7 +11,7 @@ namespace Week_2_4
     {
         static void Main(string[] args)
         {
-            int a, b, c; // int
+            int a, b; // int
             Console.WriteLine("Welcome to Hypotenuse Calculator"); // the calculator
             Console.WriteLine("Enter the length of the first side (a): "); // first length
             a = Convert.ToInt32(Console.ReadLine());
@@ -19,9 +19,8 @@ namespace Week_2_4
             Console.WriteLine("Enter the length of the second side (b): "); // second length
             b = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(Math.Sqrt(c = a * a + b * b)); // the total for c
+            Console.WriteLine("the length of the hypotenuse is " + Math.Sqrt( a * a + b * b)); // the total for c
 
-            Console.WriteLine($"the length of the hypotenuse is {c}"); // result
             Console.WriteLine("thank you for using the Hypotenuse Calculator"); // thank you
 
             Console.ReadLine(); //read line
